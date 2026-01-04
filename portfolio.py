@@ -90,7 +90,7 @@ elif page == "Project 2: Sales Dashboard":
 
 # --- PAGE 4: MOVIE RECOMMENDER (NEW) ---
 elif page == "Project 3: Movie Recommender":
-    st.title("🎬 NextWatch-AI: Movie Recommender")
+    st.title("🎬 Nextmovie-AI: Movie Recommender")
     # You can replace this URL with the screenshot you took earlier if you host it online
     st.image("https://miro.medium.com/v2/resize:fit:1400/1*d2s10a2f4s6d4s5d.png", caption="Content-Based Filtering Engine") 
     
@@ -111,5 +111,6 @@ elif page == "Project 3: Movie Recommender":
     """)
     
     # Links to your deployed app and repo
-    st.success("👉 **[Click Here to Try the Live App](https://dbhuauoruhg.streamlit.app/)**")
+    st.success("👉 **[Click Here to Try the Live App](https://nextmovie.streamlit.app/)**")
     st.info("📂 **[View Source Code on GitHub](https://github.com/KunalSoyane/nextwatch-ai)**")
+
