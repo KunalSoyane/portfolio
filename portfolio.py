@@ -6,7 +6,8 @@ st.set_page_config(page_title="Kunal Soyane | Data Scientist", page_icon="📊",
 # --- SIDEBAR (Navigation) ---
 st.sidebar.image("https://cdn-icons-png.flaticon.com/512/3135/3135715.png", width=120)
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["About Me", "Project 1: Resume Parser", "Project 2: Sales Dashboard"])
+# UPDATE: Added "Project 3: Movie Recommender" to the list
+page = st.sidebar.radio("Go to", ["About Me", "Project 1: Resume Parser", "Project 2: Sales Dashboard", "Project 3: Movie Recommender"])
 
 st.sidebar.write("---")
 st.sidebar.write("📧 **Contact:** kunalviveksoyane@gmail.com")
@@ -62,14 +63,12 @@ elif page == "Project 1: Resume Parser":
     - **Streamlit** (Frontend)
     """)
     
-    # YOUR ACTUAL LINK HERE
     st.success("👉 **[Click Here to Try the Live App](https://resume-parser-qy5vdto7j7zpirwtoqrrwe.streamlit.app/)**")
     st.info("📂 **[View Source Code on GitHub](https://github.com/KunalSoyane/resume-parser)**")
 
 # --- PAGE 3: SALES DASHBOARD ---
 elif page == "Project 2: Sales Dashboard":
     st.title("📊 Superstore Sales Dashboard")
-    # You can add a screenshot of your dashboard here later!
     st.image("https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4960-b9f5-e50122f4815f.png", caption="Interactive Sales Analysis")
     
     st.markdown("""
@@ -86,6 +85,31 @@ elif page == "Project 2: Sales Dashboard":
     - **Plotly Express** (Interactive Charts)
     """)
     
-    # YOUR NEW LINK HERE
     st.success("👉 **[Click Here to Open Dashboard](https://sales-dashboard-jzxwbcn4rlmmviss9evapp6.streamlit.app/)**")
     st.info("📂 **[View Source Code on GitHub](https://github.com/KunalSoyane/sales-dashboard)**")
+
+# --- PAGE 4: MOVIE RECOMMENDER (NEW) ---
+elif page == "Project 3: Movie Recommender":
+    st.title("🎬 NextWatch-AI: Movie Recommender")
+    # You can replace this URL with the screenshot you took earlier if you host it online
+    st.image("https://miro.medium.com/v2/resize:fit:1400/1*d2s10a2f4s6d4s5d.png", caption="Content-Based Filtering Engine") 
+    
+    st.markdown("""
+    ### **The Problem**
+    Streaming services have too many options. Users suffer from "decision paralysis."
+    
+    ### **The Solution**
+    A machine learning engine that recommends movies based on similarity rather than popularity.
+    1. **Content-Based Filtering:** Uses Cosine Similarity to find movies with similar metadata.
+    2. **Smart Search:** Handles 5,000+ movies with real-time poster fetching.
+    3. **Interactive UI:** Built with Streamlit for instant results.
+    
+    ### **Tech Stack**
+    - **Scikit-Learn** (TF-IDF Vectorization & Cosine Similarity)
+    - **Pandas** (Data Manipulation)
+    - **TMDB API** (Real-time Image Fetching)
+    """)
+    
+    # Links to your deployed app and repo
+    st.success("👉 **[Click Here to Try the Live App](https://dbhuauoruhg.streamlit.app/)**")
+    st.info("📂 **[View Source Code on GitHub](https://github.com/KunalSoyane/nextwatch-ai)**")
